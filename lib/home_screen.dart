@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:zebra_rfid_flutter_demo/zebra_rfid_sdk/src/models/reader_device.dart';
 import 'package:zebra_rfid_flutter_demo/zebra_rfid_sdk_plugin_notifier/zebra_rfid_sdk_plugin_notifier.dart';
 import 'package:zebra_rfid_reader_sdk/zebra_rfid_reader_sdk.dart';
 
@@ -14,6 +12,8 @@ class HomeScreen extends HookConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     ref.watch(zebraRfidSdkPluginNotifierProvider);
     _setUpListeners(ref, context);
+
+    ref.read(zebraRfidSdkPluginNotifierProvider.notifier).checkPermissionsApproved();
 
     return Scaffold(
       appBar: AppBar(
@@ -31,7 +31,9 @@ class HomeScreen extends HookConsumerWidget {
                 "Connect to Zebra",
                 style: TextStyle(color: Theme.of(context).colorScheme.onPrimary, fontSize: 14),
               ),
-              onPressed: () {},
+              onPressed: () {
+                ref.read(zebraRfidSdkPluginNotifierProvider.notifier).connectToZebra(ReaderDevice.initial());
+              },
             )
           ],
         ),
@@ -63,9 +65,11 @@ class HomeScreen extends HookConsumerWidget {
             ),
           );
           break;
+        case ConnectionStatus.disconnected:
+          print("Disconnected from ${reader?.name}");
         case null:
 
-        /// Should not get here
+          /// Should not get here
           throw UnimplementedError();
       }
     });

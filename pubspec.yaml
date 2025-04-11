@@ -59,10 +59,10 @@ dependencies:
   flutter_animate: ^4.2.0+1
   # Lib doesn't work for Android 14+. This PR addresses it but it hasn't been merged yet
   flutter_barcode_listener: ^0.1.4
-  flutter_broadcasts: # https://github.com/kevlatus/flutter_broadcasts/pull/16
-    git:
-      url: git@github.com:DPohorielov/flutter_broadcasts.git
-      ref: 616eaf91a8d8e1dca70bafe5fecde33164298d77
+#  flutter_broadcasts: # https://github.com/kevlatus/flutter_broadcasts/pull/16
+#    git:
+#      url: git@github.com:DPohorielov/flutter_broadcasts.git
+#      ref: 616eaf91a8d8e1dca70bafe5fecde33164298d77
   flutter_email_sender: ^6.0.3
   flutter_hooks: ^0.20.0
   flutter_local_notifications: ^17.2.2
@@ -153,6 +153,10 @@ dependencies:
   app_badge_plus: ^1.1.6
   rxdart: ^0.28.0
   permission_handler: ^11.4.0
+  zebra_rfid_reader_sdk:
+    git:
+      url: git@github.com:tezekiel/zebra_rfid_reader_sdk.git
+      ref: 5930bce3fe752539b3c9ea13bdb29d75d24c5a22
 
 dependency_overrides:
   analyzer: ^6.3.0

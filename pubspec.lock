@@ -637,15 +637,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.1.4"
-  flutter_broadcasts:
-    dependency: "direct main"
-    description:
-      path: "."
-      ref: "616eaf91a8d8e1dca70bafe5fecde33164298d77"
-      resolved-ref: "616eaf91a8d8e1dca70bafe5fecde33164298d77"
-      url: "git@github.com:DPohorielov/flutter_broadcasts.git"
-    source: git
-    version: "0.4.0"
   flutter_email_sender:
     dependency: "direct main"
     description:
@@ -2192,6 +2183,15 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.1.3"
+  zebra_rfid_reader_sdk:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: "5930bce3fe752539b3c9ea13bdb29d75d24c5a22"
+      resolved-ref: "5930bce3fe752539b3c9ea13bdb29d75d24c5a22"
+      url: "git@github.com:tezekiel/zebra_rfid_reader_sdk.git"
+    source: git
+    version: "0.0.2"
 sdks:
   dart: ">=3.6.0 <4.0.0"
   flutter: ">=3.27.0"

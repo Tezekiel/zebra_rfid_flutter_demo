@@ -4,10 +4,8 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:loggy/loggy.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import 'package:zebra_rfid_flutter_demo/zebra_rfid_sdk/src/models/reader_device.dart';
-import 'package:zebra_rfid_flutter_demo/zebra_rfid_sdk/src/models/tag_data.dart';
-import 'package:zebra_rfid_flutter_demo/zebra_rfid_sdk/src/zebra_rfid_reader_sdk.dart';
 import 'package:zebra_rfid_flutter_demo/zebra_rfid_sdk_plugin_notifier/action_notifier.dart';
+import 'package:zebra_rfid_reader_sdk/zebra_rfid_reader_sdk.dart';
 
 part 'zebra_rfid_sdk_plugin_notifier.freezed.dart';
 
@@ -56,6 +54,7 @@ class ZebraRfidSdkPluginNotifier extends _$ZebraRfidSdkPluginNotifier {
     final readers = await state.zebraRfidReaderSdkPlugin.getAvailableReaderList();
     if (readers.isNotEmpty) {
       final reader = readers.first;
+      logInfo("Found reader: ${reader.name}");
       connectToZebra(reader);
     } else {
       logInfo("ERROR: No readers available");
@@ -63,7 +62,9 @@ class ZebraRfidSdkPluginNotifier extends _$ZebraRfidSdkPluginNotifier {
   }
 
   void connectToZebra(ReaderDevice reader) {
-    state.zebraRfidReaderSdkPlugin.connect(reader.name!);
+    logInfo("Connecting to reader: ${reader.name}");
+    final name = 'RFIDEM45';
+    state.zebraRfidReaderSdkPlugin.connect(name);
   }
 
   void disconnectFromZebra() {
