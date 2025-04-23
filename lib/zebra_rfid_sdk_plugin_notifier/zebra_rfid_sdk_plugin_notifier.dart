@@ -4,8 +4,10 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:loggy/loggy.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
+import 'package:zebra_rfid_flutter_demo/zebra_lib/models/reader_device.dart';
+import 'package:zebra_rfid_flutter_demo/zebra_lib/models/tag_data.dart';
+import 'package:zebra_rfid_flutter_demo/zebra_lib/zebra_rfid_reader_sdk.dart';
 import 'package:zebra_rfid_flutter_demo/zebra_rfid_sdk_plugin_notifier/action_notifier.dart';
-import 'package:zebra_rfid_reader_sdk/zebra_rfid_reader_sdk.dart';
 
 part 'zebra_rfid_sdk_plugin_notifier.freezed.dart';
 
@@ -33,19 +35,7 @@ class ZebraRfidSdkPluginNotifier extends _$ZebraRfidSdkPluginNotifier {
     );
   }
 
-  Future<void> checkPermissionsApproved() async {
-    final bluetoothScan = await Permission.bluetoothScan
-        .request()
-        .isGranted;
-    final bluetoothConnect = await Permission.bluetoothConnect
-        .request()
-        .isGranted;
-    final location = await Permission.location
-        .request()
-        .isGranted;
-
-    if (!bluetoothScan || !bluetoothConnect || !location) return;
-
+  Future<void> startReader() async {
     _setInitialReader();
   }
 

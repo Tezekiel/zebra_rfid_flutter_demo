@@ -153,10 +153,6 @@ dependencies:
   app_badge_plus: ^1.1.6
   rxdart: ^0.28.0
   permission_handler: ^11.4.0
-  zebra_rfid_reader_sdk:
-    git:
-      url: git@github.com:tezekiel/zebra_rfid_reader_sdk.git
-      ref: 5930bce3fe752539b3c9ea13bdb29d75d24c5a22
 
 dependency_overrides:
   analyzer: ^6.3.0
