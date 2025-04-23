@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/Users/karlo.karagic/fvm/versions/3.29.2/packages/flutter_tools/gradle/src/main/groovy/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/karlo.karagic/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/karlo.karagic/AndroidStudioProjects/zebra_rfid_flutter_demo/android/app/.cxx/Debug/4s5f3l6x/x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/karlo.karagic/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/karlo.karagic/AndroidStudioProjects/zebra_rfid_flutter_demo/android/app/.cxx/Debug/4s5f3l6x/x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {}
+}

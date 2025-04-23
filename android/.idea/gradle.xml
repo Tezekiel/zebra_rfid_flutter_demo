@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$USER_HOME$/fvm/versions/3.27.0/packages/flutter_tools/gradle" name="gradle">
+                <projects>
+                  <project path="$USER_HOME$/fvm/versions/3.27.0/packages/flutter_tools/gradle" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="testRunner" value="CHOOSE_PER_TEST" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$USER_HOME$/.pub-cache/git/flutter_power_file_view-7df3ec8bfe67b9972ef353efee654b5a0ed9330e/android" />
+            <option value="$USER_HOME$/.pub-cache/git/flutter_qr_mobile_vision-69d77be93d12cdc69a7bb5087bf50eb7e0fae6d0/android" />
+            <option value="$USER_HOME$/.pub-cache/git/plugin_libphonenumber-6740b85c909b07caedf023a95b7d78c6ff6e0403/libphonenumber_plugin/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/app_badge_plus-1.2.1/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/app_settings-5.2.0/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/audioplayers_android-4.0.3/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/connectivity_plus-4.0.2/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/device_info_plus-9.1.2/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/external_app_launcher-4.0.3/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/file_picker-8.0.7/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/firebase_analytics-10.10.7/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/firebase_core-2.32.0/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/firebase_crashlytics-3.5.7/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/firebase_messaging-14.9.4/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_email_sender-6.0.3/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_local_notifications-17.2.4/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_plugin_android_lifecycle-2.0.27/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_secure_storage-8.1.0/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_web_auth_2-4.1.0/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/image_picker_android-0.8.12+22/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/local_auth_android-1.0.48/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/location-7.0.0/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/maps_launcher-2.2.1/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/native_device_orientation-2.0.3/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/open_file_manager-0.0.4/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/open_filex-4.7.0/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/package_info_plus-4.2.0/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/path_provider_android-2.2.16/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/permission_handler_android-12.1.0/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/shared_preferences_android-2.4.8/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/sqlcipher_flutter_libs-0.5.7/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/url_launcher_android-6.3.15/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/vibration-3.1.3/android" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$USER_HOME$/fvm/versions/3.27.0/packages/flutter_tools/gradle" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

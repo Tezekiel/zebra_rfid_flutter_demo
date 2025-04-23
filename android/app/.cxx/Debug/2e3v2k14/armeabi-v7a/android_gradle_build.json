@@ -1,0 +1,28 @@
+{
+  "buildFiles": [
+    "/Users/karlo.karagic/fvm/versions/3.29.2/packages/flutter_tools/gradle/src/main/groovy/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/karlo.karagic/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/karlo.karagic/AndroidStudioProjects/zebra_rfid_flutter_demo/android/app/.cxx/Debug/2e3v2k14/armeabi-v7a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/karlo.karagic/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/karlo.karagic/AndroidStudioProjects/zebra_rfid_flutter_demo/android/app/.cxx/Debug/2e3v2k14/armeabi-v7a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {},
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "/Users/karlo.karagic/Library/Android/sdk/ndk/28.1.13356709/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang.lld",
+      "cppCompilerExecutable": "/Users/karlo.karagic/Library/Android/sdk/ndk/28.1.13356709/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++.lld"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": []
+}

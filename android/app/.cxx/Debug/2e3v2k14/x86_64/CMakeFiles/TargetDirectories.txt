@@ -1,0 +1,2 @@
+/Users/karlo.karagic/AndroidStudioProjects/zebra_rfid_flutter_demo/android/app/.cxx/Debug/2e3v2k14/x86_64/CMakeFiles/edit_cache.dir
+/Users/karlo.karagic/AndroidStudioProjects/zebra_rfid_flutter_demo/android/app/.cxx/Debug/2e3v2k14/x86_64/CMakeFiles/rebuild_cache.dir
